@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+.after-arrow::after {
+    content: "";
+    position: relative;
+    left: 0.5rem; /* igual que after:left-2 */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('/Componentes/assets/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(1) brightness(2);
+  }
+  
+  /* Componentes reutilizables */
+  @layer components {
+    .subtitle {
+        @apply text-xl font-bold my-8;
+    }
+  }
