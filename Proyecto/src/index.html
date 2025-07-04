@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex justify-between mx-5 my-5 sm:mx-20">
+        <div class="text-3xl font-bold">
+            W.
+        </div>
+        <nav class="text-xs flex items-center">
+            <!-- <button class="flex h-full items-center sm:hidden">
+                <img src="./assets/hamburger-menu.svg" class="w-10 h-10" alt="">
+            </button> -->
+
+            <input type="checkbox" id="menu" class="peer hidden">
+            <label for="manu" class="z-10 bg-open peer-checked:bg-close block w-10 h-5 bg-cover bg-center cursor-pointer transition-all sm:hidden"></label>
+            <div class="fixed inset-0 w-full bg-gray-700/75 translate-x-full peer-checked:translate-x-0 transition-transform flex justify-end">
+                <ul class="flex flex-col gap-5 text-lg pt-40 pl-5 bg-white h-full w-60">
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+            </div>
+            
+
+            <ul class="hidden sm:flex sm:gap-6 sm:h-full sm:items-center">
+                <li>Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Trending</li>
+                <li>Categories</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mx-5 my-5 sm:flex sm:gap-4 sm:mx-20">
+        <section class="flex flex-col gap-4 sm:w-2/3">
+            <img src="./assets/image-web-3.webp" alt="Imagen de la noticia" class="h-80 object-cover sm:h-full">
+            <div class="flex flex-col gap-4 sm:flex-row">
+                <h1 class="text-4xl font-bold sm:w-1/2">The Bright Future of Web 3.0?</h1>
+                <div class="flex flex-col justify-betwee items-start gap-4 sm:w-1/2">
+                    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti cum architecto alias, molestias eligendi, iure necessitatibus provident vero dolorem reprehenderit pariatur animi omnis, nisi quis maxime corporis sint culpa ipsam?</p>
+                    <button class="bg-orange-600 hover:bg-slate-900 text-white px-3 py-1 tracking-widest">READ MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="bg-slate-900 my-10 p-4 sm:w-1/3 sm:my-0">
+            <h2 class="text-orange-600 text-2xl font-bold">New</h2>
+            <div class="py-4">
+                <h3 class="text-white text-sm font-bold">Hydrogen VS Electric Cars</h3>
+                <p class="text-slate-300 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="py-4 border-t border-b border-slate-300">
+                <h3 class="text-white text-sm font-bold">The Downsides of AI Astristry</h3>
+                <p class="text-slate-300 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="py-4">
+                <h3 class="text-white text-sm font-bold">Is VC Funding Drying up?</h3>
+                <p class="text-slate-300 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </aside>
+    </main>
+
+    <div class="mx-5 my-10 sm:mx-20">
+        <ul class="flex flex-col gap-4 sm:flex-row">
+            <li class="flex gap-4">
+                <img src="./assets/image-retro-pcs.jpg" alt="Imagen PC" class="w-18 h-18">
+                <div>
+                    <h2 class="text-slate-300 font-bold">01</h2>
+                    <h3 class="text-xs font-bold">Reviving Retro PCs</h3>
+                    <p class="text-xs">What happens when old pcs...</p>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <img src="./assets/image-retro-pcs.jpg" alt="Imagen PC" class="w-18 h-18">
+                <div>
+                    <h2 class="text-slate-300 font-bold">02</h2>
+                    <h3 class="text-xs font-bold">Reviving Retro PCs</h3>
+                    <p class="text-xs">What happens when old pcs...</p>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <img src="./assets/image-retro-pcs.jpg" alt="Imagen PC" class="w-18 h-18">
+                <div>
+                    <h2 class="text-slate-300 font-bold">03</h2>
+                    <h3 class="text-xs font-bold">Reviving Retro PCs</h3>
+                    <p class="text-xs">What happens when old pcs...</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
